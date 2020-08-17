@@ -39,9 +39,10 @@ article_df_scrape = article_df.reset_index()
 
 article_text = []
 i = 0
-for url in article_df_scrape.web_url[0:101]:
+for url in article_df_scrape.web_url:
     article_text.append(scrape_article_text(url))
     i += 1
+    print(f"scraping article {i}")
     if i % 100 == 0:
         time.sleep(10) # sleep 10 seconds every 100 articles
     else:
