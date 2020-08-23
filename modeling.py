@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun Aug 23 11:45:44 2020
+Set of functions to fit LDA, NMF, and TextBlob Sentiment Analysis
+to a corpus of documents
 
 @author: markfunke
 """
