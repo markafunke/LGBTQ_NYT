@@ -1,6 +1,6 @@
 # LGBTQ_NYT
 Natural Language Processing analysis of 50 years of L.G.B.T.Q articles. in the New York Times.
-This analysis was conducted as Project 4 of my time at Metis. You can see the presentation in [NYT_LGBT.pdf](https://github.com/markafunke/rookiewr-regression/blob/master/preprocessing.py/)
+This analysis was conducted as Project 4 of my time at Metis. You can see the presentation in [NYT_LGBT.pdf](https://github.com/markafunke/rookiewr-regression/blob/master/preprocessing.py/). Ultimately found 9 distinct L.G.B.T.Q. topics from 1970-2020, with a clear change in prevalence over the years.
 
 ## Outline of Files
 
