@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Aug 13 18:49:26 2020
+Set of functions to pull LGBTQ articles from NYT API, and scrape article text
+Creates a dataframe with API and Article Text
 
 @author: mark
 """
@@ -148,8 +149,8 @@ if __name__ == __main__:
         i += 1
        
     # Save pickle as checkpoint after API runs
-    article_df_all.to_pickle("articles.p").
-    article_df = pd.read_pickle("articles.p")
+    article_df_all.to_pickle("pickles/articles.p").
+    article_df = pd.read_pickle("pickles/articles.p")
     
     # Create year, decade, and word_count columns
     article_df["year"] = article_df["date"].apply(lambda x: x[0:4])
@@ -171,6 +172,6 @@ if __name__ == __main__:
             time.sleep(0.5) # sleep half second every other time
     
     # Save final dataframe with article text for use in rest of analysis        
-    article_df_scrape.to_pickle("article_text.p")   
+    article_df_scrape.to_pickle("pickles/article_text.p")   
 
 
